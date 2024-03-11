@@ -32,7 +32,7 @@ const searchInput = document.getElementById("search");
 
   async function fetchMarvelData(search) {
     // const PUBLIC_KEY = "9798c70d3a564b5b348e0faab8ac5062";
-    // const PRIVATE_KEY = "da5aafdff6ebeddaa9bc8db4b9e87dbc02ca049a"; // Replace with your Marvel API private key
+    // const PRIVATE_KEY = "da5aafdff6ebeddaa9bc8db4b9e87dbc02ca049a";
     // const ts = new Date().getTime();
     // const dataToHash = `${ts}${PUBLIC_KEY}${PRIVATE_KEY}`;
     
@@ -76,7 +76,7 @@ function fetchCharactersData(idnumber) {
   // Shows in suggestions
   function showSuggestions(marvelData) {
     var element = marvelData.data.results;
-      // suggestionList.push(marvelData);
+      
       marvelData.data.results.forEach( (element) => {
       const movieCard = document.createElement("div");
       

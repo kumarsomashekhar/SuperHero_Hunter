@@ -1,13 +1,12 @@
 const favContainer=document.getElementById('fav-characters-container');
 // get favourites heros id from local storage and store in an array
 
-// Add to favourite list
 // // Retrieve favorites from local storage
 let favList = JSON.parse(localStorage.getItem('favourites')) || [];
 
 // Function to display favorite characters
 function favCharacters() {
-  favContainer.innerHTML = ""; // Clear previous content
+  favContainer.innerHTML = ""; // Clears previous content
 
   // Fetch and display favorite characters
   favList.forEach(async (id) => {

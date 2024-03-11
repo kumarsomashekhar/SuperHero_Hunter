@@ -1,5 +1,3 @@
-
-
     const characterId = document.getElementById("characterId")
     const title = document.getElementById("title");
     const poster = document.getElementById("poster");
