@@ -78,9 +78,9 @@ function fetchCharactersData(idnumber) {
     var element = marvelData.data.results;
       
       marvelData.data.results.forEach( (element) => {
-      const movieCard = document.createElement("div");
+      const HeroCard = document.createElement("div");
       
-      movieCard.innerHTML = `
+      HeroCard.innerHTML = `
       <div class="card my-2" data-id="${element.id}">
            <div class="container-character-image">
            <a href="HeroInfo.html" >
@@ -102,7 +102,7 @@ function fetchCharactersData(idnumber) {
                     <p class="card-text">
                      <button id="fav-btn" class="fav-btn">
                        <i class="fa-solid fa-heart add-fav" onclick="addFavourite(${element.id})" data-id="${element.id}"></i>
-                     </button> "${element.id}"
+                     </button>
                    </p>
                    
             </div>
@@ -110,7 +110,7 @@ function fetchCharactersData(idnumber) {
           </div>
 
     `;
-      suggestionsContainer.prepend(movieCard);
+      suggestionsContainer.prepend(HeroCard);
       
     });
 
