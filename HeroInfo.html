@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeroInfo</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\91959\Desktop\Js projects\SuperHero_Hunter\images\images.png" />
+
+    <!-- Bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/a8162db7fd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="HeroInfo.css" />
+</head>
+<body>
+        <nav class="navbar navbar-dark  px-2">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img
+                    class="HeroImg"
+                  src="C:\Users\91959\Desktop\Js projects\SuperHero_Hunter\MarvelLogo.jpg"
+                  alt=""
+                  width="50"
+                  height="30"
+                  class="d-inline-block align-text-top"
+                />
+                
+                
+              </a>
+              <a href="index.html">
+                <button type="button" class="btn">
+                  <i class="fa-solid fa-angle-left"></i> Go Back
+                </button>
+              </a>
+            </div>
+          </nav>
+
+          <!-- MAIN container -->
+    <main class="container-fluid  justify-content-center my-4 ">
+        <div
+          class="d-flex justify-content-between align-content-center mx-auto container"
+          style="max-width: 70vw"
+        >
+          <div>
+            <h3 id="title">Character name:</h3>
+
+            <p class="characterId">characterId: <span id="characterId" class="characterId"> _ _ _</span></p>
+           
+          </div>
+  
+        </div>
+  
+        <!-- Character card -->
+        <div
+          class="card mb-3 mx-auto animate__animated animate__backInDown"
+          style="max-width: 70vw"
+        >
+          <div class="row g-0">
+            <div
+              class="col-md-3 d-flex justify-content-center justify-content-lg-start"
+            >
+              <img
+                id="poster"
+                class="img-fluid rounded-start"
+                style="max-height: 400px"
+              />
+            </div>
+            <div class="col-md-8 my-2">
+              <div class="card-body mt-3">
+                
+                <h5 class="card-title">Description</h5>
+                <p class="card-text" id="description">_ _ _</p>
+                <div id="comics"> 
+                    <p class="info-type">
+                         comics :
+                         <span id="comics-available" class="comics-available">_ _ _</span> 
+                    </p>
+                    
+                </div> 
+                <p class="info-type">
+                  Series :
+                  <span id="Series-available" class="Series--available">_ _ _</span>
+                </p>
+                <p class="info-type">
+                  Stories :
+                  <span id="Stories-available" class="Stories-available">_ _ _</span>
+                </p>
+                <p class="info-type">
+                    Events :
+                    <span id="Events-available" class="Events-available">_ _ _</span>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    <script src="HeroInfo.js"></script>
+</body>
+</html>
