@@ -8,7 +8,7 @@
 const searchInput = document.getElementById("search");
     const suggestionsContainer = document.getElementById("card-container");
     
-    let suggestionList = [];
+    // let suggestionList = [];
 
     searchInput.addEventListener("keydown", (event) => {
         if (event.key == "Enter") {
@@ -21,9 +21,10 @@ const searchInput = document.getElementById("search");
     let search = searchInput.value;
     if (search === "") {
       suggestionsContainer.innerHTML = "";
-      suggestionList = [];
+      // suggestionList = [];
     } else {
       (async () => {
+        // const ts = new Date().getTime(); // use of ts
         let marvelData = await fetchMarvelData(search);
         showSuggestions(marvelData);
       })();
